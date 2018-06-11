@@ -16,23 +16,29 @@
 
 
     <div class="col-lg-4 col-md-4" id="login_box">
-        <div id="login_field">
 
+
+
+        <div>
             @using (Ajax.BeginForm("LoginOrCreate", "Home", new AjaxOptions
-            {
-
-                UpdateTargetId = "outputfield",
-                HttpMethod = "POST",
-                InsertionMode = InsertionMode.Replace
-            }))
-            {
-                <input type="submit" class="btn btn-default" name="loginbutton" value="Log In">
-                <input type="submit" class="btn btn-default" name="loginbutton" value="Create New">
-            }
-
-
-
+        {
+            UpdateTargetId = "login_field",
+            HttpMethod = "POST",
+            InsertionMode = InsertionMode.Replace
+        }))
+        {
+            <input type="submit" class="btn btn-default" name="loginbutton" value="New User">
+            <input type="submit" class="btn btn-default" name="loginbutton" value="Existing User">
+    }
         </div>
+
+
+        <div id="login_field">
+            @Html.Partial("PV_Login")
+        </div>
+
+
+
     </div>
 
 
@@ -52,7 +58,7 @@
 
     <div class="col-lg-6 col-md-6">   </div>
 
-
+    <div id="dummy">   </div>
 
 
 
