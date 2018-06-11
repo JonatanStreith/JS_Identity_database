@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "UserControl";
+}
+
+<h2>UserControl</h2>
+
+<div class="row">
+
+
+    <div class="col-lg-8 col-md-8">
+        <span>This is just filler</span>
+    </div>
+
+
+
+
+    <div class="col-lg-4 col-md-4" id="login_box">
+        <div id="login_field">
+
+            @using (Ajax.BeginForm("LoginOrCreate", "Home", new AjaxOptions
+            {
+
+                UpdateTargetId = "outputfield",
+                HttpMethod = "POST",
+                InsertionMode = InsertionMode.Replace
+            }))
+            {
+                <input type="submit" class="btn btn-default" name="loginbutton" value="Log In">
+                <input type="submit" class="btn btn-default" name="loginbutton" value="Create New">
+            }
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+<div class="row">
+
+
+    <div class="col-lg-6 col-md-6">   </div>
+
+
+
+    <div class="col-lg-6 col-md-6">   </div>
+
+
+
+
+
+</div>
