@@ -17,17 +17,29 @@ namespace JS_Identity.Models
             var userStore = new UserStore<User>(context);
             var userManager = new UserManager<User>(userStore);
 
-           // context.Users.Contains()
 
-            userManager.Create(user: new User()
+
+
+
+
+            var searchData = context.Users.Where(x => x.Name == _name).SingleOrDefault();
+
+            if (searchData == null)
             {
-                Name = _name
-            }, password: _password);
 
+                userManager.Create(user: new User()
+                {
+                    Name = _name
+                }, password: _password);
 
-            return true;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-    
+
 
     }
 }
