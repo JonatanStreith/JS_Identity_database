@@ -7,7 +7,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace JS_Identity.Models
 {
-    public class UserContext : IdentityDbContext<People>
+    public class UserContext : IdentityDbContext<User>
     {
 
         public UserContext()

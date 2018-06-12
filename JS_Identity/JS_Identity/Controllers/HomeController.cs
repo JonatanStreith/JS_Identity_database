@@ -36,7 +36,7 @@ namespace JS_Identity.Controllers
         public ActionResult LoginOrCreate(string loginbutton)
         {
             if (loginbutton == "Existing User") { return PartialView("PV_Login"); }
-            else if (loginbutton == "New User") { return PartialView("PV_CreateAccount"); }
+            else if (loginbutton == "New User") { return PartialView("PV_CreateAccount", ""); }
             else { return View("UserControl"); }
 
         }
@@ -47,9 +47,14 @@ namespace JS_Identity.Controllers
         }
 
 
-        public ActionResult CreateAccount()
+        public ActionResult CreateAccount(string name, string password)
         {
-            return View();
+
+            bool success = LoginFunctions.CreateAccount(name, password);
+
+            if (success) { return PartialView("PV_CreateAccount", "Account created!"); }
+            else { return PartialView("PV_CreateAccount", "Name or password in use."); }
+
         }
 
 

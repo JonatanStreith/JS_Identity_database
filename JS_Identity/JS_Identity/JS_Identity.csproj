@@ -129,7 +129,8 @@
     </Compile>
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\Country.cs" />
-    <Compile Include="Models\People.cs" />
+    <Compile Include="Models\LoginFunctions.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\StaticData.cs" />
     <Compile Include="Models\UserContext.cs" />
     <Compile Include="Models\WorldContext.cs" />
