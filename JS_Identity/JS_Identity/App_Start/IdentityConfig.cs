@@ -54,10 +54,10 @@ namespace JS_Identity_Project
             manager.PasswordValidator = new PasswordValidator
             {
                 RequiredLength = 6,
-                RequireNonLetterOrDigit = true,
-                RequireDigit = true,
-                RequireLowercase = true,
-                RequireUppercase = true,
+                RequireNonLetterOrDigit = false,
+                RequireDigit = false,
+                RequireLowercase = false,
+                RequireUppercase = false,
             };
 
             // Configure user lockout defaults
@@ -89,9 +89,9 @@ namespace JS_Identity_Project
     }
 
     // Configure the application sign-in manager which is used in this application.
-    public class ApplicationSignInManager : SignInManager<AppUser, string>
+    public class AppSignInManager : SignInManager<AppUser, string>
     {
-        public ApplicationSignInManager(AppUserManager userManager, IAuthenticationManager authenticationManager)
+        public AppSignInManager(AppUserManager userManager, IAuthenticationManager authenticationManager)
             : base(userManager, authenticationManager)
         {
         }
@@ -101,9 +101,9 @@ namespace JS_Identity_Project
             return user.GenerateUserIdentityAsync((AppUserManager)UserManager);
         }
 
-        public static ApplicationSignInManager Create(IdentityFactoryOptions<ApplicationSignInManager> options, IOwinContext context)
+        public static AppSignInManager Create(IdentityFactoryOptions<AppSignInManager> options, IOwinContext context)
         {
-            return new ApplicationSignInManager(context.GetUserManager<AppUserManager>(), context.Authentication);
+            return new AppSignInManager(context.GetUserManager<AppUserManager>(), context.Authentication);
         }
     }
 }

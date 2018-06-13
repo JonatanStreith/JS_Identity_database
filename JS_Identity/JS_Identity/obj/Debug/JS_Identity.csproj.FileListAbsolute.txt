@@ -91,3 +91,4 @@ C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\bin\M
 C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\bin\Microsoft.Owin.Security.Cookies.xml
 C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\bin\Newtonsoft.Json.xml
+C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\obj\Debug\JS_Identity.csprojResolveAssemblyReference.cache
