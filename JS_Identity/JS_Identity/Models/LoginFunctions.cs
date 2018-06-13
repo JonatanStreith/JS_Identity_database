@@ -13,10 +13,13 @@ namespace JS_Identity.Models
 
         public static bool CreateAccount(string _name, string _password)
         {
-            var context = new UserContext();
-            var userStore = new UserStore<User>(context);
-            var userManager = new UserManager<User>(userStore);
+            //var context = new AppUserContext();
+            //var userStore = new UserStore<AppUser>(context);
+            //var userManager = new UserManager<AppUser>(userStore);
 
+            var context = new AppUserContext();
+            var userStore = new UserStore<AppUser>(context);
+            var userManager = new UserManager<AppUser>(userStore);
 
 
 
@@ -27,7 +30,7 @@ namespace JS_Identity.Models
             if (searchData == null)
             {
 
-                userManager.Create(user: new User()
+                userManager.Create(user: new AppUser()
                 {
                     Name = _name
                 }, password: _password);

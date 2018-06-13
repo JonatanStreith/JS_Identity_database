@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace JS_Identity.Models
 {
-    public class User : IdentityUser
+    public class AppUser : IdentityUser
     {
         [Key]
         public string Name { get; set; }

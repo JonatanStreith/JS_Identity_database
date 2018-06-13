@@ -7,17 +7,17 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace JS_Identity.Models
 {
-    public class UserContext : IdentityDbContext<User>
+    public class AppUserContext : IdentityDbContext<AppUser>
     {
 
-        public UserContext()
+        public AppUserContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
 
-        public static UserContext Create()
+        public static AppUserContext Create()
         {
-            return new UserContext();
+            return new AppUserContext();
         }
 
 
