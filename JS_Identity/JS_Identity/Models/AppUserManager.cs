@@ -9,24 +9,24 @@ using System.Web;
 
 namespace JS_Identity.Models
 {
-    public class AppUserManager : UserManager<AppUser>
-    {
-        public AppUserManager(IUserStore<AppUser> store)
-            : base(store)
-        {
-        }
+    //public class AppUserManager : UserManager<AppUser>
+    //{
+    //    public AppUserManager(IUserStore<AppUser> store)
+    //        : base(store)
+    //    {
+    //    }
 
-        // this method is called by Owin therefore best place to configure your User Manager
-        public static AppUserManager Create(
-            IdentityFactoryOptions<AppUserManager> options, IOwinContext context)
-        {
-            var manager = new AppUserManager(
-                new UserStore<AppUser>(context.Get<AppUserContext>()));
+    //    // this method is called by Owin therefore best place to configure your User Manager
+    //    public static AppUserManager Create(
+    //        IdentityFactoryOptions<AppUserManager> options, IOwinContext context)
+    //    {
+    //        var manager = new AppUserManager(
+    //            new UserStore<AppUser>(context.Get<AppUserContext>()));
 
-            // optionally configure your manager
-            // ...
+    //        // optionally configure your manager
+    //        // ...
 
-            return manager;
-        }
-    }
+    //        return manager;
+    //    }
+    //}
 }

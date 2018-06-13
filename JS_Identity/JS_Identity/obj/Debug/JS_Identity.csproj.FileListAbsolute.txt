@@ -64,7 +64,6 @@ C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\bin\S
 C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\bin\System.Web.Webpages.Razor.xml
 C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\bin\System.Web.Helpers.xml
 C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\bin\System.Web.Mvc.xml
-C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\obj\Debug\JS_Identity.csprojResolveAssemblyReference.cache
 C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\obj\Debug\JS_Identity.csproj.CoreCompileInputs.cache
 C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\obj\Debug\JS_Identity.csproj.CopyComplete
 C:\Users\Lexicon\source\repos\JS_Identity_database\JS_Identity\JS_Identity\obj\Debug\JS_Identity.dll
